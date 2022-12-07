@@ -1,24 +1,13 @@
 
-import sys, os
-import ctypes
+import sys, os, logging, cv2
 
 from playsound import playsound
 import pandas as pd 
 from datetime import datetime
-from pyzbar.pyzbar import decode
-import cv2 #import waitKey, VideoCapture, destroyAllWindows, imread, IMREAD_UNCHANGED, cvtColor, COLOR_BGR2RGB
 from github import Github
-
-
-from PyQt5 import QtWidgets 
-from PyQt5 import QtCore 
-from PyQt5 import QtGui
-from PyQt5 import uic
-
-import logging
+from PyQt5 import QtWidgets, QtCore, QtGui, uic
 
 basedir = os.path.dirname(__file__)
-#ctypes.windll.kernel32.SetDllDirectoryW(None)
 
 
 #logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -60,7 +49,6 @@ class Worker(QtCore.QObject):
 
         cap = cv2.VideoCapture(0)
         while(self.start):
-            #print("ok")
             #Capture the video frame by frame
             ret, frame = cap.read()
             
@@ -98,9 +86,6 @@ class Worker(QtCore.QObject):
                 logging.error(f'worker thread got {e}.')
                 self.errorSig.emit(str(e))
             
-        
-        #cap.release()
-        #destroyAllWindows()
 
     def stop(self):
         self.start = False
@@ -151,7 +136,6 @@ class Main(QtWidgets.QMainWindow):
         self.CloseProgramButton.setIconSize(QtCore.QSize(30, 30))
         
         # set logo
-        
         #input_image = cv2.imread("src/logo/Sadiq200x200.png", cv2.IMREAD_UNCHANGED)
         input_image = cv2.imread("src/logo/Alrafifain200x200.png", cv2.IMREAD_UNCHANGED)
 
