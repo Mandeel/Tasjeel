@@ -21,7 +21,7 @@ logging.basicConfig(filename=loggingFile, encoding='utf-8', level=logging.ERROR)
 
 
 
-class UpdaterWindow(QtWidgets.QMainWindow):
+class UpdaterWindow(QtWidgets.QWidget):
     """
     This "window" is a QWidget. If it has no parent, it
     will appear as a free-floating window as we want.
@@ -348,12 +348,11 @@ class Main(QtWidgets.QMainWindow):
                 x = updateAvailableMsg.exec_()
                 if x == QtWidgets.QMessageBox.Ok:
                     try:
-                        self.show_update_window
+                        self.show_update_window()
                     except Exception as e:
                         print(str(e))
 
                     print('updating...')
-
         except Exception as e:
             QtWidgets.QApplication.restoreOverrideCursor()
             NoInterenetConnectionMsg = QtWidgets.QMessageBox()
@@ -363,7 +362,7 @@ class Main(QtWidgets.QMainWindow):
             x = NoInterenetConnectionMsg.exec_() 
 
 
-    def show_update_window(self, checked):
+    def show_update_window(self):
         self.w = UpdaterWindow()
         self.w.show()
 
