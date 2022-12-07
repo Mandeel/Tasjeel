@@ -1,5 +1,7 @@
 
-import sys, os, logging, cv2
+AppVersion = '0.3.0'
+import sys, os, logging, cv2, atexit
+
 
 from playsound import playsound
 import pandas as pd 
@@ -7,6 +9,7 @@ from datetime import datetime
 from github import Github
 from PyQt5 import QtWidgets, QtCore, QtGui, uic
 from urllib.request import urlopen
+import subprocess
 
 basedir = os.path.dirname(__file__)
 
@@ -36,11 +39,17 @@ class Downloader(QtCore.QThread):
         self._filename = filename
 
     def run(self):
-        url = "https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe"
-        filename = "python-3.7.2.exe"
+        url = "https://github.com/Mandeel/Tasjeel/releases/latest/download/Tasjeel.setup.exe"
+        #url = "https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21.exe"
+        filename = "setup.exe"
         readBytes = 0
         chunkSize = 1024
         # Open the URL address.
+        try:
+            os.remove("setup.exe")
+        except OSError:
+            pass
+
         with urlopen(url) as r:
             # Tell the window the amount of bytes to be downloaded.
             self.setTotalProgress.emit(int(r.info()["Content-Length"]))
@@ -72,23 +81,24 @@ class UpdaterWindow(QtWidgets.QWidget):
     """
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Window22222")
-        self.label = QtWidgets.QLabel("Press the button to start downloading.", self)
-        self.label.setGeometry(20, 20, 200, 25)
-        self.button = QtWidgets.QPushButton("Start download", self)
-        self.button.move(20, 60)
+        self.setWindowTitle("تنزيل تحديث البرنامج")
+        self.label = QtWidgets.QLabel("اضغط على \"أبدأ التنزيل\" لبدأ عملية تنزيل التحديث", self)
+        self.label.setGeometry(20, 20, 300, 25)
+        self.button = QtWidgets.QPushButton("أبدأ التنزيل", self)
+        self.button.move(200, 60)
         self.button.pressed.connect(self.initDownload)
         self.progressBar = QtWidgets.QProgressBar(self)
         self.progressBar.setGeometry(20, 115, 300, 25)
 
     def initDownload(self):
-        self.label.setText("Downloading file...")
+        self.label.setText("جاري عملية التنزيل...")
         # Disable the button while the file is downloading.
         self.button.setEnabled(False)
         # Run the download in a new thread.
         self.downloader = Downloader(
-            "https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe",
-            "python-3.7.2.exe"
+            "https://github.com/Mandeel/Tasjeel/releases/latest/download/Tasjeel.setup.exe",
+            #"https://github.com/pbatard/rufus/releases/download/v3.21/rufus-3.21.exe",
+            "setup.exe"
         )
         # Connect the signals which send information about the download
         # progress with the proper methods of the progress bar.
@@ -100,11 +110,15 @@ class UpdaterWindow(QtWidgets.QWidget):
         self.downloader.succeeded.connect(self.downloadSucceeded)
         self.downloader.finished.connect(self.downloadFinished)
         self.downloader.start()
-        
+
     def downloadSucceeded(self):
         # Set the progress at 100%.
         self.progressBar.setValue(self.progressBar.maximum())
-        self.label.setText("The file has been downloaded!")
+        self.label.setText("تم تنزيل الملف بنجاح!")
+        #atexit.register(os.execl, "setup.exe", "setup.exe")
+        #self.close
+        subprocess.Popen("setup.exe")
+        sys.exit(app.exec_())
 
     def downloadFinished(self):
         # Restore the button.
@@ -189,24 +203,24 @@ class Main(QtWidgets.QMainWindow):
         # intialize the user interfeace
         uic.loadUi('src/pyqt/MainMenuGUI.ui', self)
         self.setWindowTitle("برنامج تسجيل الحضور")
-        exitAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'Exit', self)
+        exitAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'أغلاق', self)
         exitAct.setShortcut('Ctrl+Q')
-        exitAct.setStatusTip('Exit application')
+        exitAct.setStatusTip('أغلاق البرنامج')
         exitAct.triggered.connect(self.close)
         
-        aboutAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'About', self)
+        aboutAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'عن', self)
         aboutAct.setShortcut('Ctrl+A')
-        aboutAct.setStatusTip('About')
+        aboutAct.setStatusTip('حول')
         aboutAct.triggered.connect(self.aboutPopUp)  
 
-        check4updateAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'check for updates', self)
+        check4updateAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'فحص التحديثات', self)
         #aboutAct.setShortcut('Ctrl+A')
-        check4updateAct.setStatusTip('check for updates')
+        check4updateAct.setStatusTip('فحص التحديثات')
         check4updateAct.triggered.connect(self.check_for_updates)       
 
         menubar = self.menuBar()
-        fileMenu = menubar.addMenu('&File')
-        helpMenu = menubar.addMenu('&Help')
+        fileMenu = menubar.addMenu('&ملف')
+        helpMenu = menubar.addMenu('&مساعدة')
 
         fileMenu.addAction(exitAct)
         helpMenu.addAction(aboutAct)
@@ -403,7 +417,7 @@ class Main(QtWidgets.QMainWindow):
 
         try:
             QtWidgets.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
-            g = Github("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")
+            g = Github("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")
             repo = g.get_user().get_repo("TasjeelUpdate")
             latestVersion = repo.get_contents("version.txt")
             latestVersion = float(latestVersion.decoded_content.decode())
@@ -412,19 +426,19 @@ class Main(QtWidgets.QMainWindow):
                 currentVersion = float(f.readlines()[0])
 
             updatedMsg = QtWidgets.QMessageBox()
-            updatedMsg.setWindowTitle("check for updates")
-            updatedMsg.setText("the App is up to date!")
+            updatedMsg.setWindowTitle("فحص التحديثات")
+            updatedMsg.setText("البرنامج محدث!")
             updatedMsg.setIcon(QtWidgets.QMessageBox.Information)
 
             updateAvailableMsg = QtWidgets.QMessageBox()
-            updateAvailableMsg.setWindowTitle("check for updates")
-            updateAvailableMsg.setText("App is not up to date! App is on version " + str(currentVersion) + " but could be on version " + str(latestVersion) + "!"\
-            "<br>press ok to start updating")
+            updateAvailableMsg.setWindowTitle("فحص التحديثات")
+            updateAvailableMsg.setText("البرنامج ليس محدثا! أصدار النسخة الحالية هو " + str(currentVersion) + " لكن يمكن تحديث البرنامج للنسخة " + str(latestVersion) + "!"\
+            "<br>أضغط على موافق لبدأ عملية التحديث")
             updateAvailableMsg.setIcon(QtWidgets.QMessageBox.Information)
             updateAvailableMsg.setStandardButtons(QtWidgets.QMessageBox.Ok | QtWidgets.QMessageBox.Cancel)
             QtWidgets.QApplication.restoreOverrideCursor()
             if (currentVersion  >= latestVersion):
-                print("App is up to date!")
+                print("نسخة البرنامج الحالية هي أخر نسخة!")
                 x = updatedMsg.exec_() 
             else:
                 print("App is not up to date! App is on version " + str(currentVersion) + " but could be on version " + str(latestVersion) + "!")
@@ -439,7 +453,7 @@ class Main(QtWidgets.QMainWindow):
         except Exception as e:
             QtWidgets.QApplication.restoreOverrideCursor()
             NoInterenetConnectionMsg = QtWidgets.QMessageBox()
-            NoInterenetConnectionMsg.setWindowTitle("checking internet connection")
+            NoInterenetConnectionMsg.setWindowTitle("تأكد من اتصالك بالأنترنيت")
             NoInterenetConnectionMsg.setText(str(e))
             NoInterenetConnectionMsg.setIcon(QtWidgets.QMessageBox.Information)
             x = NoInterenetConnectionMsg.exec_() 
@@ -461,7 +475,7 @@ class Main(QtWidgets.QMainWindow):
 
     def showErrors(self, errormsg):
         errorMsgBox = QtWidgets.QMessageBox()
-        errorMsgBox.setWindowTitle("There was an error")
+        errorMsgBox.setWindowTitle("حدث خطأ!")
         errorMsgBox.setText(errormsg)
         errorMsgBox.setIcon(QtWidgets.QMessageBox.Information)
         x = errorMsgBox.exec_()
@@ -479,6 +493,7 @@ dir_ = QtCore.QDir("Cairo")
 _id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
 app.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'src/icons/tasjeel.ico')))
 app.setApplicationName("Tasjeel")
+app.setApplicationVersion(AppVersion)
 
 window = Main()
 
