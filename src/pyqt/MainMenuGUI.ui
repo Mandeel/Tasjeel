@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="startRegisterationButton">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>470</y>
+      <width>231</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cairo Medium</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="locale">
+     <locale language="Arabic" country="Iraq"/>
+    </property>
+    <property name="text">
+     <string>البدأ بتسجيل الحظور</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../../../../.designer/backup/src/1456453791535958155-256.png</normaloff>../../../../../../../../.designer/backup/src/1456453791535958155-256.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>211</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>250</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cairo Medium</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="locale">
+     <locale language="Arabic" country="Egypt"/>
+    </property>
+    <property name="text">
+     <string>برنامج تسجيل حظور  الطلاب</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CloseProgramButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>231</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cairo Medium</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="locale">
+     <locale language="Arabic" country="Iraq"/>
+    </property>
+    <property name="text">
+     <string>أغلاق البرنامج</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../../../../.designer/backup/src/20098406041536572526-256.png</normaloff>../../../../../../../../.designer/backup/src/20098406041536572526-256.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CameraLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>640</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionhelp">
+   <property name="text">
+    <string>about</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

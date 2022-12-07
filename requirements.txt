@@ -1,0 +1,10 @@
+playsound
+pandas
+pyzbar
+opencv-python
+PyGitHub 
+PyQt5
+openpyxl
+pyinstaller
+pylibdmtx
+cffi
