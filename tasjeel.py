@@ -494,7 +494,7 @@ _id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
 app.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'src/icons/tasjeel.ico')))
 app.setApplicationName("Tasjeel")
 app.setApplicationVersion(AppVersion)
-
+app.setStyle('Fusion')
 window = Main()
 
 sys.exit(app.exec_())
