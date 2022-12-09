@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime
 from github import Github
 from PyQt5 import QtWidgets, QtCore, QtGui, uic
-from urllib.request import urlopen
+from urllib.request import urlopen, URLError
 import subprocess
 
 basedir = os.path.dirname(__file__)
@@ -233,17 +233,22 @@ class Main(QtWidgets.QMainWindow):
         self.CloseProgramButton.setIconSize(QtCore.QSize(30, 30))
         
         # set logo
-        #input_image = cv2.imread("src/logo/Sadiq200x200.png", cv2.IMREAD_UNCHANGED)
-        input_image = cv2.imread("src/logo/Alrafifain200x200.png", cv2.IMREAD_UNCHANGED)
+        input_image1 = cv2.imread("src/logo/Sadiq200x200.png", cv2.IMREAD_UNCHANGED)
+        input_image2 = cv2.imread("src/logo/Alrafifain200x200.png", cv2.IMREAD_UNCHANGED)
 
-        height, width, channels = input_image.shape
+        height, width, channels = input_image1.shape
         bytesPerLine = channels * width
-        qImg = QtGui.QImage(input_image.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
-        pixmap01 = QtGui.QPixmap.fromImage(qImg)
-        pixmap_image = QtGui.QPixmap(pixmap01)
-        label_imageDisplay = QtWidgets.QLabel()
-        self.label_2.setPixmap(pixmap_image)
-        
+        qImg1 = QtGui.QImage(input_image1.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
+        pixmap01 = QtGui.QPixmap.fromImage(qImg1)
+        pixmap_image1 = QtGui.QPixmap(pixmap01)
+        self.label_2.setPixmap(pixmap_image1)
+
+
+        qImg2 = QtGui.QImage(input_image2.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
+        pixmap02 = QtGui.QPixmap.fromImage(qImg2)
+        pixmap_image2 = QtGui.QPixmap(pixmap02)
+        self.label_4.setPixmap(pixmap_image2)
+
         app.aboutToQuit.connect(self.closeEvent)
 
         
@@ -357,7 +362,6 @@ class Main(QtWidgets.QMainWindow):
 
     def openFileNamesDialog(self):
         options = QtWidgets.QFileDialog.Options()
-        options |= QtWidgets.QFileDialog.DontUseNativeDialog
         files, _ = QtWidgets.QFileDialog.getOpenFileNames(None,"اختيار ملف تسجيل الحضور", "","Excell Files (*.xlsx)", options=options)
         if files:
             self.xlsx_file_dir = files[0]
@@ -384,6 +388,8 @@ class Main(QtWidgets.QMainWindow):
             else:
                 self.startRegisterationButton.setEnabled(False)
                 self.statusBar().showMessage("عملية تسجيل الحضور قيد العمل")
+                self.label_2.hide()
+                self.label_4.hide()
                 self.start_registeration_requestedSig.emit(True)
 
 
@@ -406,23 +412,16 @@ class Main(QtWidgets.QMainWindow):
 
         x = msg.exec_()  # this will show our messagebox
 
-    def internet_on():
-        try:
-            urllib2.urlopen('http://github.com', timeout=1)
-            return True
-        except urllib2.URLError as err: 
-            return False
-
     def check_for_updates(self):
 
         try:
             QtWidgets.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
-            g = Github("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")
-            repo = g.get_user().get_repo("TasjeelUpdate")
-            latestVersion = repo.get_contents("version.txt")
+            g = Github()
+            repo = g.get_repo("Mandeel/Tasjeel")
+            latestVersion = repo.get_contents("src/version/version.txt")
             latestVersion = float(latestVersion.decoded_content.decode())
             print(latestVersion)
-            with open('src/version/version.txt') as f:
+            with open(r'C:\Program Files (x86)\Tasjeel\src\version\version.txt') as f:
                 currentVersion = float(f.readlines()[0])
 
             updatedMsg = QtWidgets.QMessageBox()
@@ -494,7 +493,7 @@ _id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
 app.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'src/icons/tasjeel.ico')))
 app.setApplicationName("Tasjeel")
 app.setApplicationVersion(AppVersion)
-app.setStyle('Fusion')
+#app.setStyle('Fusion')
 window = Main()
 
 sys.exit(app.exec_())

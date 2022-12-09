@@ -40,7 +40,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../../../../../.designer/backup/src/1456453791535958155-256.png</normaloff>../../../../../../../../.designer/backup/src/1456453791535958155-256.png</iconset>
+      <normaloff>../../../../../../../.designer/backup/src/1456453791535958155-256.png</normaloff>../../../../../../../.designer/backup/src/1456453791535958155-256.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -52,8 +52,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>60</y>
+      <x>570</x>
+      <y>10</y>
       <width>211</width>
       <height>200</height>
      </rect>
@@ -110,7 +110,7 @@
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../../../../../.designer/backup/src/20098406041536572526-256.png</normaloff>../../../../../../../../.designer/backup/src/20098406041536572526-256.png</iconset>
+      <normaloff>../../../../../../../.designer/backup/src/20098406041536572526-256.png</normaloff>../../../../../../../.designer/backup/src/20098406041536572526-256.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -122,10 +122,23 @@
    <widget class="QLabel" name="CameraLabel">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>90</x>
       <y>20</y>
       <width>640</width>
       <height>400</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>211</width>
+      <height>200</height>
      </rect>
     </property>
     <property name="text">

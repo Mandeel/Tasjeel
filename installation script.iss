@@ -24,7 +24,7 @@ DisableProgramGroupPage=yes
 ;PrivilegesRequired=lowest
 OutputDir=C:\Users\Thulfiqar\Desktop
 OutputBaseFilename=Tasjeel setup
-SetupIconFile=C:\Users\Thulfiqar\Desktop\Noor Aldeen\IDs program\attendance registeration\Tasjeel\Alsadiq\src\icons\installation.ico
+SetupIconFile=C:\Users\Thulfiqar\Documents\GitHub\Tasjeel\src\icons\installation.ico
 UninstallDisplayIcon={app}\{#MyAppExeName}
 
 Compression=lzma
@@ -38,8 +38,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\Thulfiqar\Desktop\Noor Aldeen\IDs program\attendance registeration\Tasjeel\Alsadiq\dist\Tasjeel\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Thulfiqar\Desktop\Noor Aldeen\IDs program\attendance registeration\Tasjeel\Alsadiq\dist\Tasjeel\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\Users\Thulfiqar\Documents\GitHub\Tasjeel\dist\Tasjeel\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Thulfiqar\Documents\GitHub\Tasjeel\dist\Tasjeel\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
