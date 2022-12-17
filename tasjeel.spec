@@ -9,6 +9,7 @@ from pylibdmtx import pylibdmtx
 from pyzbar import pyzbar
 import cffi
 import _cffi_backend
+import qtawesome as qta
 
 block_cipher = None
 
@@ -18,9 +19,9 @@ a = Analysis(
     ['tasjeel.py'],
     pathex=[],
     binaries=[],
-    datas=[("src/pyqt/MainMenuGUI.ui", "src/pyqt"),("src/logo/Sadiq200x200.png","src/logo"),("src/logo/Alrafifain200x200.png","src/logo"), ("src/sounds/notification.mp3","src/sounds"),
-    ("src/sounds/wrong-answer.mp3","src/sounds"), ("src/icons/tasjeel.ico","src/icons"),("src/icons/start.png","src/icons"),
-            ("src/icons/exit.png","src/icons"), ("src/version/version.txt","src/version"), ("src/font/Cairo-Medium.ttf", "src/font")],
+    datas=[("src/pyqt/MainMenuGUI.ui", "src/pyqt"),("src/pyqt/AboutMenuGUI.ui", "src/pyqt"),("src/logo/Sadiq150x150.png","src/logo"),("src/logo/Alrafifain150x150.png","src/logo"), ("src/sounds/notification.mp3","src/sounds"),
+    ("src/sounds/wrong-answer.mp3","src/sounds"), ("src/version/version.txt","src/version"), ("src/font/Cairo-Medium.ttf", "src/font"),
+    ("src/icons/tasjeel.png","src/icons")],
 	hiddenimports=['_cffi_backend'],
     hookspath=[],
     hooksconfig={},
@@ -58,7 +59,7 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
     uac_admin=True,
-    icon='src/icons/tasjeel.ico'
+    icon='src/icons/tasjeel.png'
 )
 coll = COLLECT(
     exe,

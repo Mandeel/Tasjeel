@@ -14,13 +14,52 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="startRegisterationButton">
+   <widget class="QLabel" name="uni1_lbl">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>470</y>
-      <width>231</width>
-      <height>71</height>
+      <x>580</x>
+      <y>10</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CameraLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>640</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="uni2_lbl">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>781</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -32,43 +71,90 @@
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
-    <property name="locale">
-     <locale language="Arabic" country="Iraq"/>
+    <property name="title">
+     <string>بدأ العمل</string>
     </property>
-    <property name="text">
-     <string>البدأ بتسجيل الحظور</string>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../../../../../.designer/backup/src/1456453791535958155-256.png</normaloff>../../../../../../../.designer/backup/src/1456453791535958155-256.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>30</width>
-      <height>30</height>
-     </size>
-    </property>
+    <widget class="QPushButton" name="startRegisterationButton">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>40</y>
+       <width>200</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cairo Medium</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="locale">
+      <locale language="Arabic" country="Iraq"/>
+     </property>
+     <property name="text">
+      <string>البدأ بتسجيل الحظور</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../../../.designer/backup/src/1456453791535958155-256.png</normaloff>../../../../../../../.designer/backup/src/1456453791535958155-256.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fnshBtn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>200</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cairo Medium</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="locale">
+      <locale language="Arabic" country="Iraq"/>
+     </property>
+     <property name="text">
+      <string>إنهاء عملية التسجيل</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../../../.designer/backup/src/20098406041536572526-256.png</normaloff>../../../../../../../.designer/backup/src/20098406041536572526-256.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>10</y>
-      <width>211</width>
-      <height>200</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>250</y>
-      <width>211</width>
-      <height>31</height>
+      <x>10</x>
+      <y>330</y>
+      <width>781</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -80,20 +166,43 @@
     <property name="layoutDirection">
      <enum>Qt::RightToLeft</enum>
     </property>
-    <property name="locale">
-     <locale language="Arabic" country="Egypt"/>
+    <property name="title">
+     <string>الواجهة</string>
     </property>
-    <property name="text">
-     <string>برنامج تسجيل حظور  الطلاب</string>
-    </property>
+    <widget class="QRadioButton" name="radio_button_1">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>50</y>
+       <width>95</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>فاتح</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radio_button_2">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>50</y>
+       <width>95</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>داكن</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QPushButton" name="CloseProgramButton">
+   <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>470</y>
-      <width>231</width>
-      <height>71</height>
+      <x>10</x>
+      <y>200</y>
+      <width>781</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -102,49 +211,83 @@
       <pointsize>11</pointsize>
      </font>
     </property>
-    <property name="locale">
-     <locale language="Arabic" country="Iraq"/>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
     </property>
-    <property name="text">
-     <string>أغلاق البرنامج</string>
+    <property name="title">
+     <string>التأخير بين عمليات التسجيل</string>
     </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../../../../../.designer/backup/src/20098406041536572526-256.png</normaloff>../../../../../../../.designer/backup/src/20098406041536572526-256.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>30</width>
-      <height>30</height>
-     </size>
-    </property>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>50</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>بدون تأخير</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>50</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="locale">
+      <locale language="Arabic" country="Egypt"/>
+     </property>
+     <property name="text">
+      <string>ثلاث ثواني</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="locale">
+      <locale language="Arabic" country="Egypt"/>
+     </property>
+     <property name="text">
+      <string>خمس ثواني</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_4">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>50</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="locale">
+      <locale language="Arabic" country="Egypt"/>
+     </property>
+     <property name="text">
+      <string>سبعة ثواني</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="CameraLabel">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>20</y>
-      <width>640</width>
-      <height>400</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>211</width>
-      <height>200</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>uni1_lbl</zorder>
+   <zorder>CameraLabel</zorder>
+   <zorder>uni2_lbl</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionhelp">

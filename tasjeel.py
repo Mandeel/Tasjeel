@@ -1,6 +1,7 @@
 
-AppVersion = '0.3.0'
+AppVersion = '0.4.0'
 import sys, os, logging, cv2, atexit
+import time
 
 
 from playsound import playsound
@@ -10,6 +11,10 @@ from github import Github
 from PyQt5 import QtWidgets, QtCore, QtGui, uic
 from urllib.request import urlopen, URLError
 import subprocess
+import qtawesome as qta
+#from qt_material import apply_stylesheet
+import qtmodern.styles
+import qtmodern.windows
 
 basedir = os.path.dirname(__file__)
 
@@ -22,6 +27,34 @@ def touch(path):
 touch(loggingFile)
 logging.basicConfig(filename=loggingFile, encoding='utf-8', level=logging.ERROR)
 #logging.getLogger().setLevel(logging.INFO)
+
+class aboutWindow(QtWidgets.QWidget):
+    """
+    This "window" is a QWidget. If it has no parent, it
+    will appear as a free-floating window as we want.
+    """
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("عن البرنامج")
+        uic.loadUi('src/pyqt/AboutMenuGUI.ui', self)
+        # set logo
+        input_image1 = cv2.imread("src/logo/Sadiq150x150.png", cv2.IMREAD_UNCHANGED)
+        input_image2 = cv2.imread("src/logo/Alrafifain150x150.png", cv2.IMREAD_UNCHANGED)
+
+        height, width, channels = input_image1.shape
+        bytesPerLine = channels * width
+        qImg1 = QtGui.QImage(input_image1.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
+        pixmap01 = QtGui.QPixmap.fromImage(qImg1)
+        pixmap_image1 = QtGui.QPixmap(pixmap01)
+        self.uni1_lbl.setPixmap(pixmap_image1)
+        self.about_lbl.setOpenExternalLinks(True)
+
+
+        qImg2 = QtGui.QImage(input_image2.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
+        pixmap02 = QtGui.QPixmap.fromImage(qImg2)
+        pixmap_image2 = QtGui.QPixmap(pixmap02)
+        self.uni2_lbl.setPixmap(pixmap_image2)
+        self.closeButton.clicked.connect(self.close)
 
 class Downloader(QtCore.QThread):
 
@@ -134,9 +167,11 @@ class Worker(QtCore.QObject):
     studentRegisteredSig = QtCore.pyqtSignal(str)
     changePixmap = QtCore.pyqtSignal(QtGui.QImage)
     errorSig = QtCore.pyqtSignal(str)
+    delaySig = QtCore.pyqtSignal(int)
+
     qrCodeDetector = cv2.QRCodeDetector()
 
-
+    delay_Amount = 5
     def start_registeration(self):
 
         self.start = True
@@ -178,6 +213,8 @@ class Worker(QtCore.QObject):
                         print(result)
                         self.studentRegisteredSig.emit(result)
                         name = result
+                        time.sleep(self.delay_Amount)
+                        
         
             except Exception as e:
                 logging.error(f'worker thread got {e}.')
@@ -187,6 +224,8 @@ class Worker(QtCore.QObject):
     def stop(self):
         self.start = False
         
+    def change_delay_amount(self, amount):
+        self.delay_Amount = amount
 
 
 class Main(QtWidgets.QMainWindow):
@@ -204,61 +243,66 @@ class Main(QtWidgets.QMainWindow):
         uic.loadUi('src/pyqt/MainMenuGUI.ui', self)
         self.setWindowTitle("برنامج تسجيل الحضور")
         exitAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'أغلاق', self)
-        exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip('أغلاق البرنامج')
         exitAct.triggered.connect(self.close)
         
         aboutAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'عن', self)
-        aboutAct.setShortcut('Ctrl+A')
+        #aboutAct.setShortcut('Ctrl+A')
         aboutAct.setStatusTip('حول')
         aboutAct.triggered.connect(self.aboutPopUp)  
 
         check4updateAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'فحص التحديثات', self)
+
         #aboutAct.setShortcut('Ctrl+A')
         check4updateAct.setStatusTip('فحص التحديثات')
         check4updateAct.triggered.connect(self.check_for_updates)       
 
         menubar = self.menuBar()
-        fileMenu = menubar.addMenu('&ملف')
-        helpMenu = menubar.addMenu('&مساعدة')
+        #fileMenu = menubar.addMenu('&ملف')
+        fileMenu = menubar.addMenu('ملف')
 
+        helpMenu = menubar.addMenu('مساعدة')
+        
         fileMenu.addAction(exitAct)
         helpMenu.addAction(aboutAct)
         helpMenu.addAction(check4updateAct)
 
 
+
         # set buttons icons
-        self.startRegisterationButton.setIcon(QtGui.QIcon('src\icons\start.png')) 
-        self.CloseProgramButton.setIcon(QtGui.QIcon('src\icons\exit.png')) 
-        self.CloseProgramButton.setIconSize(QtCore.QSize(30, 30))
+        start_icon = qta.icon('fa.play',
+                        active='fa.play',
+                        color='green',
+                        color_active='green')
+        self.startRegisterationButton.setIcon(start_icon) 
         
-        # set logo
-        input_image1 = cv2.imread("src/logo/Sadiq200x200.png", cv2.IMREAD_UNCHANGED)
-        input_image2 = cv2.imread("src/logo/Alrafifain200x200.png", cv2.IMREAD_UNCHANGED)
-
-        height, width, channels = input_image1.shape
-        bytesPerLine = channels * width
-        qImg1 = QtGui.QImage(input_image1.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
-        pixmap01 = QtGui.QPixmap.fromImage(qImg1)
-        pixmap_image1 = QtGui.QPixmap(pixmap01)
-        self.label_2.setPixmap(pixmap_image1)
-
-
-        qImg2 = QtGui.QImage(input_image2.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
-        pixmap02 = QtGui.QPixmap.fromImage(qImg2)
-        pixmap_image2 = QtGui.QPixmap(pixmap02)
-        self.label_4.setPixmap(pixmap_image2)
+        close_icon = qta.icon('fa.times',
+                        active='fa.times',
+                        color='red',
+                        color_active='red')
+                        
+                        
+        self.fnshBtn.setIcon(close_icon)
+        self.fnshBtn.setEnabled(False)
+        
+        
 
         app.aboutToQuit.connect(self.closeEvent)
 
         
         # connect buttons to functions
-        self.CloseProgramButton.clicked.connect(self.close)
         self.startRegisterationButton.clicked.connect(self.onPress_start_registeration)
-        
+        self.fnshBtn.clicked.connect(self.registeration_completed)
+
+
+        self.radio_button_1.toggled.connect(self.themeSelector)
+        #self.radio_button_1.setChecked(True)
+
 
         self.worker = Worker()
         self.worker_thread = QtCore.QThread()
+        
+        
 
         # connect signals
         self.start_registeration_requestedSig.connect(self.worker.start_registeration)
@@ -271,6 +315,7 @@ class Main(QtWidgets.QMainWindow):
         self.worker.changePixmap.connect(self.setImage)
 
         self.worker.errorSig.connect(self.logErrors)
+        self.worker.delaySig.connect(self.worker.change_delay_amount)
 
         # move worker to the worker thread
         self.worker.moveToThread(self.worker_thread)
@@ -278,15 +323,60 @@ class Main(QtWidgets.QMainWindow):
         # start the thread
         self.worker_thread.start()
         
+        #connect radio buttons
+        self.radioButton.clicked.connect(self.changeDelayinGui)
+        self.radioButton_2.clicked.connect(self.changeDelayinGui)
+        self.radioButton_3.clicked.connect(self.changeDelayinGui)
+        self.radioButton_4.clicked.connect(self.changeDelayinGui)
+
+
+        #App settings
+        self.settings = QtCore.QSettings('Mandeel', 'Tasjeel')
+        self.restore_settings()
+        self.changeDelayinGui()
+
+    def restore_settings(self):
+        # Get the saved radio button selection from the QSettings object
+
+        # Set the appropriate radio button as checked
+        if self.settings.contains("theme_selection"):
+            # there is the key in QSettings
+            print('Checking for theme preference in config')
+            theme_selection = self.settings.value('theme_selection')
+            print('Found theme_selection in config:' + theme_selection)
+            if theme_selection == "light":
+                qtmodern.styles.light(QtWidgets.QApplication.instance())
+                self.radio_button_1.setChecked(True)
+                #self.radio_button_2.setChecked(False)
+
+
+            else:
+                qtmodern.styles.dark(QtWidgets.QApplication.instance())
+                self.radio_button_2.setChecked(True)
+                #self.radio_button_1.setChecked(False)
+
+        if self.settings.contains("delay_selection"):
+            # there is the key in QSettings
+            print('Checking for theme preference in config')
+            delay_selection = self.settings.value('delay_selection')
+            print('Found delay_selection in config:' + str(delay_selection))
+            if delay_selection == 0:
+                self.radioButton.setChecked(True)
+            elif delay_selection == 3:
+                self.radioButton_2.setChecked(True)
+            elif delay_selection == 5:
+                self.radioButton_3.setChecked(True)
+            elif delay_selection == 7:
+                self.radioButton_4.setChecked(True)                
+            self.changeDelayinGui()
+
+
         self.show()
 
     def close_program(self):
         self.registeration_completed()
         if self.worker_thread.isRunning() == False:
-            print("should be closed")
-
             self.close
-            print("but it didn't")
 
     def closeEvent(self, event):
         close = QtWidgets.QMessageBox()
@@ -295,9 +385,10 @@ class Main(QtWidgets.QMainWindow):
         close = close.exec()
 
         if close == QtWidgets.QMessageBox.Yes:
-            self.close_program()
 
             event.accept()
+            self.close_program()
+
         else:
             event.ignore()
         #sys.exit(0)
@@ -308,7 +399,7 @@ class Main(QtWidgets.QMainWindow):
                 # self.startRegisterationButton.setEnabled(False)
                 self.get_students_data()
             else:
-                self.statusBar().showMessage("يرجى اختيار ملف تسجيل الحظور")
+                self.statusBar().showMessage("يرجى اختيار ملف تسجيل الحضور")
                 self.openFileNamesDialog()
         else:
             self.statusBar().showMessage("الكاميرا لا تعمل")
@@ -339,8 +430,28 @@ class Main(QtWidgets.QMainWindow):
         print(self.worker_thread.isRunning())
 
         self.startRegisterationButton.setEnabled(True)
+        self.fnshBtn.setEnabled(False)
+        self.CameraLabel.hide()
+        self.groupBox_2.show()
+        self.groupBox_3.show()
 
+        self.statusBar().showMessage("تم إنهاء عملية تسجيل الحضور")
 
+        
+
+    def changeDelayinGui(self):
+        if self.radioButton.isChecked():
+            self.settings.setValue('delay_selection', 0)
+            self.worker.delaySig.emit(0)
+        elif self.radioButton_2.isChecked():
+            self.settings.setValue('delay_selection', 3)
+            self.worker.delaySig.emit(3)
+        elif self.radioButton_3.isChecked():
+            self.settings.setValue('delay_selection', 5)
+            self.worker.delaySig.emit(5)
+        elif self.radioButton_4.isChecked():
+            self.settings.setValue('delay_selection', 7)
+            self.worker.delaySig.emit(7)            
     def handleStatusBarMsgs(self, value):
         self.statusBar().showMessage(value)
 
@@ -387,30 +498,21 @@ class Main(QtWidgets.QMainWindow):
 
             else:
                 self.startRegisterationButton.setEnabled(False)
+                self.fnshBtn.setEnabled(True)
+                self.CameraLabel.show()
+                self.groupBox_2.hide()
+                self.groupBox_3.hide()
+
                 self.statusBar().showMessage("عملية تسجيل الحضور قيد العمل")
-                self.label_2.hide()
-                self.label_4.hide()
                 self.start_registeration_requestedSig.emit(True)
 
 
             
     def aboutPopUp(self):
-        msg = QtWidgets.QMessageBox()
-        msg.setWindowTitle("عن البرنامج")
-        msg.setText("تطوير:<br>\
-        م.د. ذو الفقار حسين منديل - جامعة الامام الصادق (ع) \المثنى<br> \
-        م.د. نور الدين عباس خالد - كلية بلاد الرافدين الجامعة \ديالى<br><br>"
-         "االأيقونات من:\
-                                        <br>icon king1 on freeicons.io\
-                                        <br>Raj Dev on freeicons.io\
-                                        <br>Manthana Chaiwong on freeicons.io \
-                                        <br>Pixel perfect - Flaticon\
-                                        <br><br>الملفات الصوتية من:<br>\
-                                        SergeQuadrado from Pixabay \
-                                ")
-        msg.setIcon(QtWidgets.QMessageBox.Information)
+        self.w = aboutWindow()
 
-        x = msg.exec_()  # this will show our messagebox
+        self.w.show()
+
 
     def check_for_updates(self):
 
@@ -485,15 +587,34 @@ class Main(QtWidgets.QMainWindow):
         #logging.warning('that\'s not right')
         logging.error(errormsg)
 
+    def themeSelector(self, light):
+        if light:
+            qtmodern.styles.light(QtWidgets.QApplication.instance())
+            self.settings.setValue('theme_selection', 'light')
 
+        else:
+            qtmodern.styles.dark(QtWidgets.QApplication.instance())
+            self.settings.setValue('theme_selection', 'dark')
 
+            
 app = QtWidgets.QApplication(sys.argv)
 dir_ = QtCore.QDir("Cairo")
 _id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
-app.setWindowIcon(QtGui.QIcon(os.path.join(basedir, 'src/icons/tasjeel.ico')))
+app.setWindowIcon(QtGui.QIcon("src/icons/tasjeel.png"))#(QtGui.QIcon(qta.icon('fa5s.user-check')))
 app.setApplicationName("Tasjeel")
 app.setApplicationVersion(AppVersion)
-#app.setStyle('Fusion')
+qtmodern.styles.light(app)
+
+
+
+#qtmodern.styles.light(app)
+
 window = Main()
+window.setLayoutDirection(QtCore.Qt.RightToLeft)
+window.setFixedSize(800, 600)
+window.statusBar().setSizeGripEnabled(False) 
+
+#mw = qtmodern.windows.ModernWindow(window)
+#mw.show()
 
 sys.exit(app.exec_())
