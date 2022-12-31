@@ -1,5 +1,5 @@
 
-AppVersion = '0.4.0'
+AppVersion = '0.5'
 import sys, os, logging, cv2, atexit
 import time
 
@@ -7,7 +7,7 @@ import time
 from playsound import playsound
 import pandas as pd 
 from datetime import datetime
-from github import Github
+from github import Github, GithubException
 from PyQt5 import QtWidgets, QtCore, QtGui, uic
 from urllib.request import urlopen, URLError
 import subprocess
@@ -65,6 +65,7 @@ class Downloader(QtCore.QThread):
     setCurrentProgress = QtCore.pyqtSignal(int)
     # Signal to be emitted when the file has been downloaded successfully.
     succeeded = QtCore.pyqtSignal()
+    setCurrentSpeed = QtCore.pyqtSignal(float)
 
     def __init__(self, url, filename):
         super().__init__()
@@ -82,6 +83,7 @@ class Downloader(QtCore.QThread):
             os.remove("setup.exe")
         except OSError:
             pass
+        start_time = time.time()
 
         with urlopen(url) as r:
             # Tell the window the amount of bytes to be downloaded.
@@ -103,6 +105,10 @@ class Downloader(QtCore.QThread):
                     readBytes += chunkSize
                     # Tell the window how many bytes we have received.
                     self.setCurrentProgress.emit(readBytes)
+                    elapsed_time = time.time() - start_time
+                    current_speed = readBytes / elapsed_time
+                    # Update the label with the current speed.
+                    self.setCurrentSpeed.emit(current_speed)
         # If this line is reached then no exception has ocurred in
         # the previous lines.
         self.succeeded.emit()
@@ -112,16 +118,24 @@ class UpdaterWindow(QtWidgets.QWidget):
     This "window" is a QWidget. If it has no parent, it
     will appear as a free-floating window as we want.
     """
+
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("تنزيل تحديث البرنامج")
-        self.label = QtWidgets.QLabel("اضغط على \"أبدأ التنزيل\" لبدأ عملية تنزيل التحديث", self)
-        self.label.setGeometry(20, 20, 300, 25)
-        self.button = QtWidgets.QPushButton("أبدأ التنزيل", self)
-        self.button.move(200, 60)
+        uic.loadUi('src/pyqt/updateWindow.ui', self)
+        
+        font_id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
+        font_family = QtGui.QFontDatabase.applicationFontFamilies(font_id)[0]
+        font = QtGui.QFont(font_family)
+        font.setPointSize(8)
+        font2 = font
+        font2.setPointSize(10)
+
+        # set font
+        self.setFont(font)
+        self.label.setFont(font2)
+        self.button.setFont(font2)
+        self.progressBar.setFont(font2)
         self.button.pressed.connect(self.initDownload)
-        self.progressBar = QtWidgets.QProgressBar(self)
-        self.progressBar.setGeometry(20, 115, 300, 25)
 
     def initDownload(self):
         self.label.setText("جاري عملية التنزيل...")
@@ -137,12 +151,17 @@ class UpdaterWindow(QtWidgets.QWidget):
         # progress with the proper methods of the progress bar.
         self.downloader.setTotalProgress.connect(self.progressBar.setMaximum)
         self.downloader.setCurrentProgress.connect(self.progressBar.setValue)
+        self.downloader.setCurrentSpeed.connect(self.updateSpeedLabel)
+
         # Qt will invoke the `succeeded()` method when the file has been
         # downloaded successfully and `downloadFinished()` when the
         # child thread finishes.
         self.downloader.succeeded.connect(self.downloadSucceeded)
         self.downloader.finished.connect(self.downloadFinished)
         self.downloader.start()
+
+    def updateSpeedLabel(self, speed):
+        self.label.setText(f"جاري عملية التنزيل... ({round(speed / 1024):.0f}KB/s)")
 
     def downloadSucceeded(self):
         # Set the progress at 100%.
@@ -168,16 +187,19 @@ class Worker(QtCore.QObject):
     changePixmap = QtCore.pyqtSignal(QtGui.QImage)
     errorSig = QtCore.pyqtSignal(str)
     delaySig = QtCore.pyqtSignal(int)
-
+    # Signal to be emitted when the registration has been halted.
+    haltingIndicatorSig = QtCore.pyqtSignal(bool)
     qrCodeDetector = cv2.QRCodeDetector()
 
     delay_Amount = 5
     def start_registeration(self):
 
         self.start = True
-        
-
         name = ""
+
+        self.timer = QtCore.QTimer()
+        self.timer.setSingleShot(True)
+        self.timer.timeout.connect(lambda: self.haltingIndicatorSig.emit(False))
 
         cap = cv2.VideoCapture(0)
         while(self.start):
@@ -213,7 +235,12 @@ class Worker(QtCore.QObject):
                         print(result)
                         self.studentRegisteredSig.emit(result)
                         name = result
-                        time.sleep(self.delay_Amount)
+                        #self.haltingIndicatorSig.emit(True)
+                        #time.sleep(self.delay_Amount)
+                        #self.haltingIndicatorSig.emit(False)
+                        self.haltingIndicatorSig.emit(True)
+                        self.timer.start(self.delay_Amount * 1000)
+
                         
         
             except Exception as e:
@@ -239,6 +266,9 @@ class Main(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.w = None
+
+
+
         # intialize the user interfeace
         uic.loadUi('src/pyqt/MainMenuGUI.ui', self)
         self.setWindowTitle("برنامج تسجيل الحضور")
@@ -257,11 +287,30 @@ class Main(QtWidgets.QMainWindow):
         check4updateAct.setStatusTip('فحص التحديثات')
         check4updateAct.triggered.connect(self.check_for_updates)       
 
+        # Set the font size to 14 points
+        font_id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
+        font_family = QtGui.QFontDatabase.applicationFontFamilies(font_id)[0]
+        font = QtGui.QFont(font_family)
+        font.setPointSize(10)
+
+        self.radioButton.setFont(font)
+        self.radioButton_2.setFont(font)
+        self.radioButton_3.setFont(font)
+        self.radioButton_4.setFont(font)
+        self.radioButton_5.setFont(font)
+        self.radio_button_1.setFont(font)
+        self.radio_button_2.setFont(font)
+
+        
+
         menubar = self.menuBar()
+        menubar.setFont(font)
         #fileMenu = menubar.addMenu('&ملف')
         fileMenu = menubar.addMenu('ملف')
+        fileMenu.setFont(font)
 
         helpMenu = menubar.addMenu('مساعدة')
+        helpMenu.setFont(font)
         
         fileMenu.addAction(exitAct)
         helpMenu.addAction(aboutAct)
@@ -285,7 +334,14 @@ class Main(QtWidgets.QMainWindow):
         self.fnshBtn.setIcon(close_icon)
         self.fnshBtn.setEnabled(False)
         
-        
+        # status bar
+        #self.statusbar.setStyleSheet('font-size: 12pt;')
+        self.statusbar.setFont(font)
+        # indicator
+        movie = QtGui.QMovie('src/images/blinking_green_button.gif')
+        self.indicator_label.setMovie(movie)
+        self.indicator_label.hide()
+        movie.start()
 
         app.aboutToQuit.connect(self.closeEvent)
 
@@ -309,7 +365,7 @@ class Main(QtWidgets.QMainWindow):
         self.worker.studentRegisteredSig.connect(self.start_student_registeration_in_excell_file)
 
         self.worker.registerationCompletedSig.connect(self.worker.stop)
-
+        self.worker.haltingIndicatorSig.connect(self.haltingIndicatorFunc)
 
         self.worker.statusBarMsg.connect(self.handleStatusBarMsgs)
         self.worker.changePixmap.connect(self.setImage)
@@ -328,6 +384,7 @@ class Main(QtWidgets.QMainWindow):
         self.radioButton_2.clicked.connect(self.changeDelayinGui)
         self.radioButton_3.clicked.connect(self.changeDelayinGui)
         self.radioButton_4.clicked.connect(self.changeDelayinGui)
+        self.radioButton_5.clicked.connect(self.changeDelayinGui)
 
 
         #App settings
@@ -367,7 +424,9 @@ class Main(QtWidgets.QMainWindow):
             elif delay_selection == 5:
                 self.radioButton_3.setChecked(True)
             elif delay_selection == 7:
-                self.radioButton_4.setChecked(True)                
+                self.radioButton_4.setChecked(True)
+            elif delay_selection == 10:
+                self.radioButton_5.setChecked(True)
             self.changeDelayinGui()
 
 
@@ -379,10 +438,28 @@ class Main(QtWidgets.QMainWindow):
             self.close
 
     def closeEvent(self, event):
+        
+        font_id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
+        font_family = QtGui.QFontDatabase.applicationFontFamilies(font_id)[0]
+        font = QtGui.QFont(font_family)
+        font.setPointSize(8)
+        font2 = font
+        font2.setPointSize(10)
+
         close = QtWidgets.QMessageBox()
-        close.setText("هل تريد أغلاق البرنامج؟")
+        close.setFont(font2)
+        close.setIcon(QtWidgets.QMessageBox.Question)
+        close.setText(u"هل تريد الخروج؟")
+        close.setWindowTitle(u"تأكيد الخروج")
         close.setStandardButtons(QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.Cancel)
+        buttonY = close.button(QtWidgets.QMessageBox.Yes)
+        buttonY.setText(u'نعم')
+        buttonY.setFont(font)
+        buttonN = close.button(QtWidgets.QMessageBox.Cancel)
+        buttonN.setText('الغاء')   
+        buttonN.setFont(font)    
         close = close.exec()
+
 
         if close == QtWidgets.QMessageBox.Yes:
 
@@ -392,6 +469,10 @@ class Main(QtWidgets.QMainWindow):
         else:
             event.ignore()
         #sys.exit(0)
+
+
+     #   box.setWindowTitle('Kaydet!')
+       # box.setText('Kaydetmek İstediğinize Emin Misiniz?')
 
     def onPress_start_registeration(self):
         if self.check_camera_availability() == True:
@@ -428,13 +509,14 @@ class Main(QtWidgets.QMainWindow):
         self.worker.registerationCompletedSig.emit(False)
         self.worker_thread.quit()
         print(self.worker_thread.isRunning())
+        self.xlsx_file_dir = None
 
         self.startRegisterationButton.setEnabled(True)
         self.fnshBtn.setEnabled(False)
         self.CameraLabel.hide()
         self.groupBox_2.show()
         self.groupBox_3.show()
-
+        self.indicator_label.hide()
         self.statusBar().showMessage("تم إنهاء عملية تسجيل الحضور")
 
         
@@ -451,7 +533,10 @@ class Main(QtWidgets.QMainWindow):
             self.worker.delaySig.emit(5)
         elif self.radioButton_4.isChecked():
             self.settings.setValue('delay_selection', 7)
-            self.worker.delaySig.emit(7)            
+            self.worker.delaySig.emit(7)          
+        elif self.radioButton_5.isChecked():
+            self.settings.setValue('delay_selection', 10)
+            self.worker.delaySig.emit(10)  
     def handleStatusBarMsgs(self, value):
         self.statusBar().showMessage(value)
 
@@ -473,7 +558,14 @@ class Main(QtWidgets.QMainWindow):
 
     def openFileNamesDialog(self):
         options = QtWidgets.QFileDialog.Options()
-        files, _ = QtWidgets.QFileDialog.getOpenFileNames(None,"اختيار ملف تسجيل الحضور", "","Excell Files (*.xlsx)", options=options)
+        file_dialog = QtWidgets.QFileDialog()
+
+        # Set the initial directory to the desktop folder
+        desktop_path = os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop')
+        file_dialog.setDirectory(desktop_path)
+
+        #files, _ = QtWidgets.QFileDialog.getOpenFileNames(None,"اختيار ملف تسجيل الحضور", "","Excell Files (*.xlsx)", options=options)
+        files, _ = file_dialog.getOpenFileNames(None,"اختيار ملف تسجيل الحضور", "","Excell Files (*.xlsx)", options=options)
         if files:
             self.xlsx_file_dir = files[0]
             print(self.xlsx_file_dir)
@@ -502,20 +594,42 @@ class Main(QtWidgets.QMainWindow):
                 self.CameraLabel.show()
                 self.groupBox_2.hide()
                 self.groupBox_3.hide()
+                self.indicator_label.show()
 
                 self.statusBar().showMessage("عملية تسجيل الحضور قيد العمل")
                 self.start_registeration_requestedSig.emit(True)
 
 
-            
+    def haltingIndicatorFunc(self, value):
+        #change image of the indicator label
+        print("halting ... " + str(value))
+        if value == True:
+            halt_image = cv2.imread("src/images/halt.png", cv2.IMREAD_UNCHANGED)
+            height, width, channels = halt_image.shape
+            bytesPerLine = channels * width
+            qImg1 = QtGui.QImage(halt_image.data, width, height, bytesPerLine, QtGui.QImage.Format_ARGB32)
+            pixmap01 = QtGui.QPixmap.fromImage(qImg1)
+            pixmap_image1 = QtGui.QPixmap(pixmap01)
+            self.indicator_label.setPixmap(pixmap_image1)
+        else:
+            movie = QtGui.QMovie('src/images/blinking_green_button.gif')
+            self.indicator_label.setMovie(movie)
+            self.indicator_label.show()
+            movie.start()
+
     def aboutPopUp(self):
         self.w = aboutWindow()
-
         self.w.show()
 
 
     def check_for_updates(self):
 
+        font_id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
+        font_family = QtGui.QFontDatabase.applicationFontFamilies(font_id)[0]
+        font = QtGui.QFont(font_family)
+        font.setPointSize(8)
+        font2 = font
+        font2.setPointSize(10)
         try:
             QtWidgets.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
             g = Github()
@@ -527,16 +641,30 @@ class Main(QtWidgets.QMainWindow):
                 currentVersion = float(f.readlines()[0])
 
             updatedMsg = QtWidgets.QMessageBox()
-            updatedMsg.setWindowTitle("فحص التحديثات")
-            updatedMsg.setText("البرنامج محدث!")
+            updatedMsg.setFont(font2)
             updatedMsg.setIcon(QtWidgets.QMessageBox.Information)
+            updatedMsg.setWindowTitle("فحص التحديثات")
+            updatedMsg.setText("البرنامج محدث! أصدار النسخة الحالية هو " + str(currentVersion) + " وهو أحدث نسخة متوفرة")
+            updatedMsg.setStandardButtons(QtWidgets.QMessageBox.Ok)
+            okButton = updatedMsg.button(QtWidgets.QMessageBox.Ok)
+            okButton.setText(u"حسنا")
+            #okButton.setFont(font)
+
 
             updateAvailableMsg = QtWidgets.QMessageBox()
+            updateAvailableMsg.setFont(font2)
+            updateAvailableMsg.setIcon(QtWidgets.QMessageBox.Information)
             updateAvailableMsg.setWindowTitle("فحص التحديثات")
             updateAvailableMsg.setText("البرنامج ليس محدثا! أصدار النسخة الحالية هو " + str(currentVersion) + " لكن يمكن تحديث البرنامج للنسخة " + str(latestVersion) + "!"\
             "<br>أضغط على موافق لبدأ عملية التحديث")
-            updateAvailableMsg.setIcon(QtWidgets.QMessageBox.Information)
             updateAvailableMsg.setStandardButtons(QtWidgets.QMessageBox.Ok | QtWidgets.QMessageBox.Cancel)
+            okButton = updateAvailableMsg.button(QtWidgets.QMessageBox.Ok)
+            okButton.setText(u"موافق")
+            okButton.setFont(font)
+            cancelButton = updateAvailableMsg.button(QtWidgets.QMessageBox.Cancel)
+            cancelButton.setText(u"إلغاء")
+            cancelButton.setFont(font)
+
             QtWidgets.QApplication.restoreOverrideCursor()
             if (currentVersion  >= latestVersion):
                 print("نسخة البرنامج الحالية هي أخر نسخة!")
@@ -554,8 +682,9 @@ class Main(QtWidgets.QMainWindow):
         except Exception as e:
             QtWidgets.QApplication.restoreOverrideCursor()
             NoInterenetConnectionMsg = QtWidgets.QMessageBox()
-            NoInterenetConnectionMsg.setWindowTitle("تأكد من اتصالك بالأنترنيت")
-            NoInterenetConnectionMsg.setText(str(e))
+            NoInterenetConnectionMsg.setWindowTitle("فشل الاتصال")
+            #NoInterenetConnectionMsg.setText(str(e))
+            NoInterenetConnectionMsg.setText("تأكد من اتصالك بالأنترنيت")
             NoInterenetConnectionMsg.setIcon(QtWidgets.QMessageBox.Information)
             x = NoInterenetConnectionMsg.exec_() 
 
@@ -571,7 +700,6 @@ class Main(QtWidgets.QMainWindow):
     @QtCore.pyqtSlot(QtGui.QImage)
     def setImage(self, image):
         self.CameraLabel.setPixmap(QtGui.QPixmap.fromImage(image))
-
 
 
     def showErrors(self, errormsg):
@@ -601,7 +729,7 @@ app = QtWidgets.QApplication(sys.argv)
 dir_ = QtCore.QDir("Cairo")
 _id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
 app.setWindowIcon(QtGui.QIcon("src/icons/tasjeel.png"))#(QtGui.QIcon(qta.icon('fa5s.user-check')))
-app.setApplicationName("Tasjeel")
+app.setApplicationName("برنامج تسجيل الحضور")
 app.setApplicationVersion(AppVersion)
 qtmodern.styles.light(app)
 
@@ -611,7 +739,7 @@ qtmodern.styles.light(app)
 
 window = Main()
 window.setLayoutDirection(QtCore.Qt.RightToLeft)
-window.setFixedSize(800, 600)
+window.setFixedSize(800, 620)
 window.statusBar().setSizeGripEnabled(False) 
 
 #mw = qtmodern.windows.ModernWindow(window)

@@ -348,3 +348,1295 @@ ERROR:root:worker thread got name 'delay_Amount' is not defined.
 ERROR:root:name 'delay_Amount' is not defined
 ERROR:root:worker thread got name 'delay_Amount' is not defined.
 ERROR:root:name 'delay_Amount' is not defined
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'cv::convexHull'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'cv::convexHull'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:2489: error: (-2:Unspecified error) in function 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl cv::QRCodeDetector::decode(const class cv::_InputArray &,const class cv::_InputArray &,const class cv::_OutputArray &)'
+> Invalid QR code source points (expected: 'contourArea(src_points) > 0.0'), where
+>     'contourArea(src_points)' is 0
+> must be greater than
+>     '0.0' is 0
+
+ERROR:root:worker thread got 'Worker' object has no attribute 'haltingIndicator'.
+ERROR:root:'Worker' object has no attribute 'haltingIndicator'
+ERROR:root:worker thread got 'Worker' object has no attribute 'haltingIndicator'.
+ERROR:root:'Worker' object has no attribute 'haltingIndicator'
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\objdetect\src\qrcode.cpp:29: error: (-215:Assertion failed) !img.empty() in function 'cv::checkQRInputImage'
+
+ERROR:root:worker thread got 'Worker' object has no attribute 'haltingIndicator'.
+ERROR:root:'Worker' object has no attribute 'haltingIndicator'
+ERROR:root:worker thread got OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'cv::convexHull'
+.
+ERROR:root:OpenCV(4.6.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\convhull.cpp:143: error: (-215:Assertion failed) total >= 0 && (depth == CV_32F || depth == CV_32S) in function 'cv::convexHull'
+
+ERROR:root:worker thread got Worker.haltingIndicatorSig[QImage].emit(): argument 1 has unexpected type 'QPixmap'.
+ERROR:root:Worker.haltingIndicatorSig[QImage].emit(): argument 1 has unexpected type 'QPixmap'
+ERROR:root:worker thread got Worker.haltingIndicatorSig[QImage].emit(): argument 1 has unexpected type 'QPixmap'.
+ERROR:root:Worker.haltingIndicatorSig[QImage].emit(): argument 1 has unexpected type 'QPixmap'
+ERROR:root:worker thread got Worker.haltingIndicatorSig[QImage].emit(): argument 1 has unexpected type 'QPixmap'.
+ERROR:root:Worker.haltingIndicatorSig[QImage].emit(): argument 1 has unexpected type 'QPixmap'

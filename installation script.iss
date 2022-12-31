@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Tasjeel"
-#define MyAppVersion "0.3"
+#define MyAppVersion "0.5"
 #define MyAppPublisher "Mandeel"
 #define MyAppURL "https://www.example.com/"
 #define MyAppExeName "Tasjeel.exe"
