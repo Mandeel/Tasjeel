@@ -15,6 +15,8 @@ import qtawesome as qta
 #from qt_material import apply_stylesheet
 import qtmodern.styles
 import qtmodern.windows
+import random
+import re
 
 basedir = os.path.dirname(__file__)
 
@@ -27,6 +29,10 @@ def touch(path):
 touch(loggingFile)
 logging.basicConfig(filename=loggingFile, encoding='utf-8', level=logging.ERROR)
 #logging.getLogger().setLevel(logging.INFO)
+
+
+activated = False
+
 
 class aboutWindow(QtWidgets.QWidget):
     """
@@ -61,12 +67,75 @@ class activationWindow(QtWidgets.QWidget):
     This "window" is a QWidget. If it has no parent, it
     will appear as a free-floating window as we want.
     """
+    
+    licenseKey = ''
+    startVerificationSig = QtCore.pyqtSignal()
+    
+    
+    def verify(self):
+        
+        key = self.licenseKey
+        key = key.lower()
+        score = 0
+        check_digit = key
+        check_digit_count = 0
+        chunks = key.split('-')
+        
+
+        for chunk in chunks:
+            if len(chunk) != 4:
+                return False
+            for char in chunk:
+                if len(re.findall(check_digit[0], key)) != 3:
+                    return False
+                score += ord(char)
+                
+        print(chunks)
+        print(score)
+        print(check_digit_count)
+        if score == 1612 and len(re.findall(check_digit[0], key)) == 3:
+            return True
+        return False
+    
+    def startVerification(self):
+        
+        self.licenseKey = self.activationKeyLineEdit.text() 
+        print(self.licenseKey)
+        print('verifying...')
+        self.activationButton.setEnabled(False)
+
+        if self.verify():
+            print('ok')
+            self.activationKeyLineEdit.hide()
+            self.activationButton.hide()
+            self.title_lbl_2.hide()
+            self.activated_lbl.show()
+            
+
+        self.activationButton.setEnabled(True)
+
+    
     def __init__(self):
         super().__init__()
         self.setWindowTitle("تفعيل البرنامج")
+        
+        font_id = QtGui.QFontDatabase.addApplicationFont("src/font/Cairo-Medium.ttf")
+        font_family = QtGui.QFontDatabase.applicationFontFamilies(font_id)[0]
+        font = QtGui.QFont(font_family)
+        font.setPointSize(8)
+        font2 = font
+        font2.setPointSize(10)
+        
+        #self.activationKeyLineEdit.returnPressed.connect(lambda: self.do_action()) 
+
         uic.loadUi('src/pyqt/ActivationMenuGUI.ui', self)
+        
+        self.activated_lbl.hide()
         # set logo
+        #self.activationButton.clicked.connect(self.verify(self.licenseKey))
         self.closeButton.clicked.connect(self.close)
+        self.activationButton.pressed.connect(self.startVerification)
+
        
 
 class Downloader(QtCore.QThread):

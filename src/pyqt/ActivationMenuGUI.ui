@@ -59,7 +59,7 @@
     <string>إغلاق</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="activationButton">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -72,14 +72,42 @@
     <string>تفعيل</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QLineEdit" name="activationKeyLineEdit">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>230</y>
-     <width>441</width>
-     <height>41</height>
+     <x>80</x>
+     <y>260</y>
+     <width>401</width>
+     <height>22</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="activated_lbl">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>130</y>
+     <width>220</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cairo Medium</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="locale">
+    <locale language="Arabic" country="Egypt"/>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;نسخة مفعلة&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>
