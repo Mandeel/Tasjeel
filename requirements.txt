@@ -8,3 +8,4 @@ openpyxl
 pyinstaller
 pylibdmtx
 cffi
+qtmodern

@@ -55,6 +55,19 @@ class aboutWindow(QtWidgets.QWidget):
         pixmap_image2 = QtGui.QPixmap(pixmap02)
         self.uni2_lbl.setPixmap(pixmap_image2)
         self.closeButton.clicked.connect(self.close)
+        
+class activationWindow(QtWidgets.QWidget):
+    """
+    This "window" is a QWidget. If it has no parent, it
+    will appear as a free-floating window as we want.
+    """
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("تفعيل البرنامج")
+        uic.loadUi('src/pyqt/ActivationMenuGUI.ui', self)
+        # set logo
+        self.closeButton.clicked.connect(self.close)
+       
 
 class Downloader(QtCore.QThread):
 
@@ -280,6 +293,11 @@ class Main(QtWidgets.QMainWindow):
         #aboutAct.setShortcut('Ctrl+A')
         aboutAct.setStatusTip('حول')
         aboutAct.triggered.connect(self.aboutPopUp)  
+        
+        activationAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'تفعيل', self)
+        #aboutAct.setShortcut('Ctrl+A')
+        activationAct.setStatusTip('تفعيل البرنامج')
+        activationAct.triggered.connect(self.activationPopUp)  
 
         check4updateAct = QtWidgets.QAction(QtGui.QIcon('exit24.png'), 'فحص التحديثات', self)
 
@@ -314,6 +332,7 @@ class Main(QtWidgets.QMainWindow):
         
         fileMenu.addAction(exitAct)
         helpMenu.addAction(aboutAct)
+        helpMenu.addAction(activationAct)
         helpMenu.addAction(check4updateAct)
 
 
@@ -619,6 +638,10 @@ class Main(QtWidgets.QMainWindow):
 
     def aboutPopUp(self):
         self.w = aboutWindow()
+        self.w.show()
+
+    def activationPopUp(self):
+        self.w = activationWindow()
         self.w.show()
 
 
