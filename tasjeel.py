@@ -17,10 +17,18 @@ import qtmodern.styles
 import qtmodern.windows
 import random
 import re
+from pymongo import MongoClient
+import pprint
+import machineid
+import json
+import pickle
+from pathlib import Path
 
 basedir = os.path.dirname(__file__)
 
 
+
+#mongodb+srv://thulfiqar:frog4411@cluster0.banjt8c.mongodb.net/
 #logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(name)s - %(levelname)s - %(message)s')
 loggingFile = "application.log"
 def touch(path):
@@ -30,8 +38,26 @@ touch(loggingFile)
 logging.basicConfig(filename=loggingFile, encoding='utf-8', level=logging.ERROR)
 #logging.getLogger().setLevel(logging.INFO)
 
-
 activated = False
+
+def read_license_file():
+
+    my_file = Path('r.nd')
+    if my_file.is_file():
+        with open('r.nd', 'rb') as f:
+            loaded_dict = pickle.load(f)
+        return loaded_dict
+    else:
+        activated = False
+        return None
+
+print(read_license_file())
+licence_data = read_license_file()
+#print(licence_data['status'])
+
+if licence_data != None and licence_data['status'] == 'active' :
+    print('active')
+    activated = True
 
 
 class aboutWindow(QtWidgets.QWidget):
@@ -40,6 +66,7 @@ class aboutWindow(QtWidgets.QWidget):
     will appear as a free-floating window as we want.
     """
     def __init__(self):
+        
         super().__init__()
         self.setWindowTitle("عن البرنامج")
         uic.loadUi('src/pyqt/AboutMenuGUI.ui', self)
@@ -70,8 +97,8 @@ class activationWindow(QtWidgets.QWidget):
     
     licenseKey = ''
     startVerificationSig = QtCore.pyqtSignal()
-    
-    
+    verifiedSig = QtCore.pyqtSignal()
+
     def verify(self):
         
         key = self.licenseKey
@@ -97,22 +124,60 @@ class activationWindow(QtWidgets.QWidget):
             return True
         return False
     
+    
+    def create_license_file(self, data):
+    # Open the file in write mode
+        with open('r.nd', 'wb') as f:
+            pickle.dump(data, f)
+            
+    
     def startVerification(self):
         
         self.licenseKey = self.activationKeyLineEdit.text() 
         print(self.licenseKey)
         print('verifying...')
         self.activationButton.setEnabled(False)
+        
+        client = MongoClient('mongodb+srv://thulfiqar:frog4411@cluster0.banjt8c.mongodb.net')
+        db = client.Tasjeel
+        collection = db.LicenseKeys
+        
+        license_info = collection.find_one({"license key": "6EA5-7731-V6K6-5T5A-SBPX"})
+        #pprint.pprint(license_info)
+        #print(f"نافذة لغاية: {license_info['expiration date']}")
+        #print(f'machine id: {machineid.id()}')
+
+
+
 
         if self.verify():
             print('ok')
             self.activationKeyLineEdit.hide()
             self.activationButton.hide()
             self.title_lbl_2.hide()
+            #self.activated_lbl.text = f"نافذة لغاية: {license_info['expiration date']}"
+            self.create_license_file(license_info)
+            
+            self.read_license_file()
+            
+            if license_info['machineID'] == 'na':
+                newvalues = { "$set": { 'machineID': machineid.id() } }
+
+                pprint.pprint(collection.find_one({"license key": "6EA5-7731-V6K6-5T5A-SBPX"}))
+                collection.update_one({"license key": "6EA5-7731-V6K6-5T5A-SBPX"},newvalues, upsert= False)
+                self.activated_lbl.setText(f"نافذة لغاية: {license_info['expiration date']}") 
+
+            elif machineid.id() != license_info['machineID']:
+                self.activated_lbl.setText(f"الرخصة مستخدمة على جهاز أخر") 
+
+            
             self.activated_lbl.show()
+
             
 
-        self.activationButton.setEnabled(True)
+            self.verifiedSig.emit()
+
+            self.activationButton.setEnabled(True)
 
     
     def __init__(self):
@@ -343,13 +408,15 @@ class Main(QtWidgets.QMainWindow):
     studentLst = None
     today_date = str(datetime.today().strftime('%Y-%m-%d'))
     
+    
     df = None
+
+    
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.w = None
-
-
+  
 
         # intialize the user interfeace
         uic.loadUi('src/pyqt/MainMenuGUI.ui', self)
@@ -412,7 +479,10 @@ class Main(QtWidgets.QMainWindow):
                         color='green',
                         color_active='green')
         self.startRegisterationButton.setIcon(start_icon) 
-        
+
+        if activated == False:
+            self.startRegisterationButton.setEnabled(False)
+            
         close_icon = qta.icon('fa.times',
                         active='fa.times',
                         color='red',

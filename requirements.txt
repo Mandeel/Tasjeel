@@ -9,3 +9,6 @@ pyinstaller
 pylibdmtx
 cffi
 qtmodern
+pymongo
+py-machineid
+pickle5
